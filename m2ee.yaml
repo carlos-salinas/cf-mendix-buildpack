@@ -20,10 +20,15 @@ m2ee:
  preserve_environment: true
 
  javaopts: [
-    "-Dfile.encoding=UTF-8",
-    "-Xdebug",
-    "-Xrunjdwp:server=y,transport=dt_socket,address=8000,suspend=n",
-    "-Djava.io.tmpdir=BUILD_PATH/data/tmp",
+      "-Dfile.encoding=UTF-8",
+      "-Xdebug",
+      "-Xrunjdwp:server=y,transport=dt_socket,address=8000,suspend=n",
+      "-Djava.io.tmpdir=BUILD_PATH/data/tmp",
+      "-Dorg.apache.commons.logging.Log=org.apache.commons.logging.impl.SimpleLog",
+      "-Dorg.apache.commons.logging.simplelog.showdatetime=true",
+      "-Dorg.apache.commons.logging.simplelog.log.org.apache.http.impl.conn=DEBUG",
+      "-Dorg.apache.commons.logging.simplelog.log.org.apache.http.impl.client=DEBUG",
+      "-Dorg.apache.commons.logging.simplelog.log.org.apache.http.client=DEBUG",
  ]
 
  allow_destroy_db: true
