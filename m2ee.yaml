@@ -29,7 +29,7 @@ m2ee:
     "-Dorg.apache.commons.logging.simplelog.log.org.apache.http.impl.conn=DEBUG",
     "-Dorg.apache.commons.logging.simplelog.log.org.apache.http.impl.client=DEBUG",
     "-Dorg.apache.commons.logging.simplelog.log.org.apache.http.client=DEBUG"
- ]
+]
 
  allow_destroy_db: true
 
