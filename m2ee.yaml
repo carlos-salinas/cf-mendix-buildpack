@@ -23,7 +23,7 @@ m2ee:
     "-XX:OnError=kill -s USR1 PYTHONPID",
     "-XX:OnOutOfMemoryError=kill -s USR2 PYTHONPID",
     "-Xdebug",
-    "-agentlib:jdwp=transport=dt_socket,address=8000,server=y,suspend=y"
+    "-agentlib:jdwp=transport=dt_socket,address=8000,server=y,suspend=n"
  ]
 
  jetty:
